@@ -2,7 +2,7 @@
 # Operating Specific Junk Files
 #-------------------------
 
-.public
+/public 
 
 # OS X
 .DS_Store
