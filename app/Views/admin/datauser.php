@@ -47,7 +47,20 @@
                             </tr>
                         </thead>
 
-
+<tbody>
+    <? php $i=1;?>
+    <? foreach($users as $user):?>
+        <tr>
+            <td><?=$i++;?></td>
+            <td><?=$user->id;?></td>
+            <td><?=$user->email;?></td>
+            <td><?=$user->username;?></td>
+            <td>
+                <a href="/admin/<?$user->id;?>" class="btn btn-info"> Detail</a>
+            </td>
+            <?php endforeach;?>
+        </tr>
+</tbody>
                     </table>
                 </div>
             </div>
